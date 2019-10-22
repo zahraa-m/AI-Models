@@ -15,3 +15,5 @@ b <- ex_y - m * ex_x
 
 #3- print the regression line:
 sprintf("y= %s + %s * x", b, m)
+
+
