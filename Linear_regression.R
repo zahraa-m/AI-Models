@@ -13,5 +13,5 @@ m <- (ex_x * ex_y - ex_xy) / ((ex_x)^2 - sq_ex_x)
 # 2- calculate b 
 b <- ex_y - m * ex_x
 
-#print the regression line:
+#3- print the regression line:
 print("y= %s + %s * x", b, m)
