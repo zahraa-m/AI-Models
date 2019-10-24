@@ -11,7 +11,15 @@ td[1]
 
 ds <- sqrt(((x-td[1])^2)+((y-td[2])^2))
 ds
-rank(ds)
+ra <- order(ds)
+da_se <- data.frame(type=x, color=y, taste=z, distance=ra)
+da_se
+
+if (ra==1){
+  print("the test data is Good")
+}else{
+  print("test data is Bad")
+}
 
 
 
