@@ -1,3 +1,4 @@
+
 #creating data for KNN
 x <- c(7,7,3,1)
 y <- c(7,4,4,4)
@@ -13,6 +14,5 @@ ra <- rank(ds)
 da_se <- data.frame(type=x, color=y, taste=z, distance=ds, rank=ra)
 da_se
 ta <-which.min(ra)
-sprintf("the test data is %s", z[ta])
-
+sprintf("the test data  point classified as %s", z[ta])
 
