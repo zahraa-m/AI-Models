@@ -19,7 +19,6 @@ sprintf("the new data point classified as %s", z[ta])
 library(readr)
 da <- read_csv("Desktop/data.csv")
 da
-#as.table(da_se, keep.rownames=TRUE)
 train_d <-da[1:3, ]
 train_d
 test_d <- da[4, ]
