@@ -14,4 +14,3 @@ da_se <- data.frame(type=x, color=y, taste=z, distance=ds, rank=ra)
 da_se
 ta <-which.min(ra)
 sprintf("the new data point classified as %s", z[ta])
-
