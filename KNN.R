@@ -21,5 +21,5 @@ da <- read_csv("Desktop/data.csv")
 train_d <-da[1:4, 1:2]
 require(class)
 pre <- knn(train = train_d, test=td, cl=z, k=1)
-pre
+sprintf("the new data point classified as %s", pre[1])
 
