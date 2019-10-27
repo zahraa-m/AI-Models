@@ -14,3 +14,12 @@ data.frame(type=x, color=y, taste=z, distance=ds, rank=ra)
 ta <-which.min(ra)
 sprintf("the new data point classified as %s", z[ta])
 
+
+#Rewrite KNN by using knn function
+library(readr)
+da <- read_csv("Desktop/data.csv")
+train_d <-da[1:4, 1:2]
+require(class)
+pre <- knn(train = train_d, test=td, cl=z, k=1)
+pre
+
