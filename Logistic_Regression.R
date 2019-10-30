@@ -5,7 +5,7 @@ str(da)
 n <- da$Pass
 x <- da$Hours
 
-
+#building mle to calculate Logistic regression parameters(coefficients), b0 and b1.
 likelihood <- function(b0, b1){
   p <- 1/(1+10^(-b0-b1*x))
   if (n==0){
