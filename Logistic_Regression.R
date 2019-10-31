@@ -1,3 +1,4 @@
+#load dataset LR
 library(readr)
 da <- read_csv("Desktop/LR.csv")
 str(da)
