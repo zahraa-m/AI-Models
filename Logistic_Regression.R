@@ -18,4 +18,10 @@ likelihood <- function(b0, b1){
       s
     }
     
-    
+  }
+  
+  f<-log(f)
+  s<-log(s)
+  -sum(f+s)
+}
+
