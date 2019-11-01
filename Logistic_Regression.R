@@ -22,6 +22,7 @@ likelihood <- function(b0, b1){
   -sum(log(all_p))
 }
 
+#install stats4 package to call mle(maximum likelihood estimation) function
 #install.packages('stats4')
 library(stats4)
 library(methods)
