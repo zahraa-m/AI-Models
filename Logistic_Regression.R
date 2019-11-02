@@ -23,7 +23,7 @@ likelihood <- function(b0, b1){
 }
 
 #install stats4 package to call mle(maximum likelihood estimation) function
-#install.packages('stats4')
+install.packages('stats4')
 library(stats4)
 library(methods)
 mle(minuslogl = likelihood, start = list(b0 = 0, b1 = 0), method = "BFGS")
