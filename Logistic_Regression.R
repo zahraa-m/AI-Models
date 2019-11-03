@@ -26,5 +26,7 @@ likelihood <- function(b0, b1){
 install.packages('stats4')
 library(stats4)
 library(methods)
+#method = should be one of “Nelder-Mead”, “BFGS”, “CG”, “L-BFGS-B”, “SANN”, “Brent”
+#start= are just initial values
 mle(minuslogl = likelihood, start = list(b0 = 0, b1 = 0), method = "BFGS")
 
