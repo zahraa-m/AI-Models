@@ -9,7 +9,7 @@ s<-numeric() #vector for success, when Y(x)=1
 
 likelihood <- function(b0, b1){
   p <- 1/(1+10^(-b0-b1*x))
-  for (i in 1:20) {
+  for (i in 1:length(n)) {
     if (n[i]==1){
       s<- append(s,p[i])
     } else{
