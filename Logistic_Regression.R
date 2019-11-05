@@ -8,7 +8,8 @@ f<-numeric() #vector for fail, when Y(x)=0
 s<-numeric() #vector for success, when Y(x)=1
 
 likelihood <- function(b0, b1){
-  p <- 1/(1+10^(-b0-b1*x))
+  e <- 2.71828 #Euler's constant
+  p <- 1/(1+e^(-b0-b1*x))
   for (i in 1:length(n)) {
     if (n[i]==1){
       s<- append(s,p[i])
@@ -19,7 +20,8 @@ likelihood <- function(b0, b1){
   }
   f <- 1-f
   all_p<- c(s,f)
-  -sum(log(all_p))
+  all_p <- -sum(log(all_p))
+  return(all_p)
 }
 
 #install stats4 package to call mle(maximum likelihood estimation) function
