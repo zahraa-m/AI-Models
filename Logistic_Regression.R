@@ -4,6 +4,8 @@ str(da)
 n <- da$Pass
 x <- da$Hours
 
+plot(x,n, xlab = "Hours", ylab = "Pass")
+
 f<-numeric() #vector for fail, when Y(x)=0
 s<-numeric() #vector for success, when Y(x)=1
 
