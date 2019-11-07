@@ -1,5 +1,10 @@
 #loading data
 library(readr)
-se <- read_csv("Desktop/m_f.csv")
-str(se)
+da <- read_csv("Desktop/m_f.csv")
+str(da)
+se <- da$person
+he <- da$height
+we <- da$weight
+fo <- da$footsize
+
 
